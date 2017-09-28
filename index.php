@@ -24,6 +24,7 @@
           'PAN POINT PERO',
           'PIQUE DANS',
           'CHIER',
+          'ANIM++'
         ]
       ?>
      <h1 class="site__title mega"><?= $titles[rand(0, (count($titles) - 1))] ?></h1>
