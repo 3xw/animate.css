@@ -3,6 +3,10 @@
   animation-fill-mode: both;
 }
 
+.animated.slow {
+  animation-duration: 2s;
+}
+
 .animated.infinite {
   animation-iteration-count: infinite;
 }

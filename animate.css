@@ -13,6 +13,10 @@
   animation-fill-mode: both;
 }
 
+.animated.slow {
+  animation-duration: 2s;
+}
+
 .animated.infinite {
   animation-iteration-count: infinite;
 }
@@ -45,7 +49,7 @@
   }
 
   90% {
-    transform: translate3d(0,-4px,0);
+    transform: translate3d(0, -4px, 0);
   }
 }
 
@@ -971,6 +975,24 @@
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   animation-name: flipOutY;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating {
+  animation: floating 6s ease-in-out infinite;
 }
 
 @keyframes lightSpeedIn {
