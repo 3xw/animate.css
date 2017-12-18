@@ -1,18 +1,18 @@
 @keyframes flipInYSoft {
   from {
     transform: perspective(400px) rotate3d(0, 1, 0, -90deg);
-    animation-timing-function: ease-in;
+    animation-timing-function: ease;
     opacity: 0;
   }
 
   100% {
     transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
-    animation-timing-function: ease-in;
+    animation-timing-function: ease;
   }
 
 }
 
 .flipInYSoft {
   backface-visibility: visible !important;
-  animation-name: flipInY;
+  animation-name: flipInYSoft;
 }

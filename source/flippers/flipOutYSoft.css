@@ -1,0 +1,17 @@
+@keyframes flipOutYSoft {
+  from {
+    transform: perspective(400px);
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    transform: perspective(400px) rotate3d(0, 1, 0, -90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+}
+
+.flipOutYSoft {
+  backface-visibility: visible !important;
+  animation-name: flipOutYSoft;
+}

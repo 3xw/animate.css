@@ -95,6 +95,7 @@
           <option value="flipInYSoft">flipInYSoft</option>
           <option value="flipOutX">flipOutX</option>
           <option value="flipOutY">flipOutY</option>
+          <option value="flipOutYSoft">flipOutYSoft</option>
         </optgroup>
 
         <optgroup label="Floating">

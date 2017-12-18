@@ -59,7 +59,8 @@
     "flipInY",
     "flipInYSoft",
     "flipOutX",
-    "flipOutY"
+    "flipOutY",
+    "flipOutYSoft"
   ],
 
   "floating": [

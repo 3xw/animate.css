@@ -27,9 +27,15 @@
 
 .animated.flipOutX,
 .animated.flipOutY,
+.animated.flipInYSoft
 .animated.bounceIn,
 .animated.bounceOut {
   animation-duration: .75s;
+}
+
+.animated.flipInYSoft,
+.animated.flipOutYSoft{
+  animation-duration: .5s;
 }
 
 @keyframes bounce {
@@ -936,13 +942,13 @@
 @keyframes flipInYSoft {
   from {
     transform: perspective(400px) rotate3d(0, 1, 0, -90deg);
-    animation-timing-function: ease-in;
+    animation-timing-function: ease;
     opacity: 0;
   }
 
   100% {
     transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
-    animation-timing-function: ease-in;
+    animation-timing-function: ease;
   }
 
 }
@@ -950,7 +956,7 @@
 .flipInYSoft {
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
-  animation-name: flipInY;
+  animation-name: flipInYSoft;
 }
 
 @keyframes flipOutX {
@@ -995,6 +1001,25 @@
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   animation-name: flipOutY;
+}
+
+@keyframes flipOutYSoft {
+  from {
+    transform: perspective(400px);
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    transform: perspective(400px) rotate3d(0, 1, 0, -90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+}
+
+.flipOutYSoft {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  animation-name: flipOutYSoft;
 }
 
 @keyframes floating {

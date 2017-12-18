@@ -17,7 +17,13 @@
 
 .animated.flipOutX,
 .animated.flipOutY,
+.animated.flipInYSoft
 .animated.bounceIn,
 .animated.bounceOut {
   animation-duration: .75s;
+}
+
+.animated.flipInYSoft,
+.animated.flipOutYSoft{
+  animation-duration: .5s;
 }
