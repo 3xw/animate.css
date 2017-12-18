@@ -57,6 +57,7 @@
     "flip",
     "flipInX",
     "flipInY",
+    "flipInYSoft",
     "flipOutX",
     "flipOutY"
   ],

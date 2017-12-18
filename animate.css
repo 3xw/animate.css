@@ -933,6 +933,26 @@
   animation-name: flipInY;
 }
 
+@keyframes flipInYSoft {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, -90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  100% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
+    animation-timing-function: ease-in;
+  }
+
+}
+
+.flipInYSoft {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  animation-name: flipInY;
+}
+
 @keyframes flipOutX {
   from {
     transform: perspective(400px);

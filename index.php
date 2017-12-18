@@ -92,6 +92,7 @@
           <option value="flip">flip</option>
           <option value="flipInX">flipInX</option>
           <option value="flipInY">flipInY</option>
+          <option value="flipInYSoft">flipInYSoft</option>
           <option value="flipOutX">flipOutX</option>
           <option value="flipOutY">flipOutY</option>
         </optgroup>
